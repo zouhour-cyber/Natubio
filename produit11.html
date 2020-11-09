@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nos légumes </title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="Natubiostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e0d7e898b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/shopping-bag?style=solid">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-------------------------début -Navbar----------------------------------------------->
+<nav class="navbar navbar-expand-lg   navbar-light bg-light">
+    <a class="navbar-brand" href="acceuil.html"> <h2> Natu<span style="color: forestgreen;">Bio </span> </h2> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+       
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="acceuil.html"> Acceuil <span class="sr-only"></span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="produit.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Nos produits
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="produit.html">Nos produits</a>
+            <a class="dropdown-item" href="nos légumes.html">Nos légumes</a>
+            <a class="dropdown-item" href="nos fruits.html">Nos fruits</a>
+            <a class="dropdown-item" href="autresproduits.html"> Autres produits </a>
+          </div>
+
+        </li>
+        <li >
+            <a class="nav-link" href="apropos.html">A propos</a>
+          </li>
+          <li>
+            <a class="nav-link" href="contactnatubio.html">Contact</a>
+          </li> 
+      </ul>
+  <!------------------------------------------bouton modal inscription -------------------------------------------->
+
+      <a href="" data-toggle="modal" data-target="#connexion" class="iconav"> <i class="fa fa-user fa-2x" ></i></a>
+
+      <div class="modal fade" id="connexion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+
+                  <div class="modal-header text-center">
+
+                      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item">
+                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Connexion</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Inscription</a>
+                          </li>
+                      </ul>
+
+                      <button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                  </div>
+    <!--------------------------------------modal body---------------------------------------------->
+                  <div class="modal-body">
+                      <div class="tab-content" id="pills-tabContent">
+                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> 
+     <!----------------------------------début connexion ---------------------------------------------->
+                              <div class="row">
+                                <div class="col-sm-12 mx-auto">
+                                  <div class="card card-signin">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-center"> Connexion</h5>
+                                      <form class="form-signin">
+                                        <div class="form-label-group">
+                                          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                          <label for="inputEmail"> votre adresse e-mail</label>
+                                        </div>
+                          
+                                        <div class="form-label-group">
+                                          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                          <label for="inputPassword"> votre mot de passe </label>
+                                        </div>
+                          
+                                        <div class="custom-control custom-checkbox mb-3">
+                                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                          <label class="custom-control-label" for="customCheck1">se rappeler du mot de passe</label>
+                                        </div>
+                                        <button class="btn btn-success  btn-block text-uppercase  mr-1rem" type="submit"> connexion</button>
+                                        <hr class="my-4 mx-auto"> 
+                                        
+                                         <p class=text-center> se connecter avec </p>
+                              
+                                      <div class="d-flex justify-content-center">
+                                        <button class="btn  btn-google" type="submit"><i class="fa fa-google"></i> </button>
+                                        <button class="btn  btn-facebook" type="submit"><i class="fa fa-facebook-f"></i> </button>
+                                      </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--------------------------------------fin connexion ---------------------------------------->
+                         
+                          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <!--------------------------------------début  inscription ------------------------------------->
+                            <div class="row">
+                              <div class="col-sm-12 mx-auto">
+                                <div class="card card-signin">
+                                  <div class="card-body">
+                                    <h5 class="card-title text-center"> Inscription</h5>
+                                    <form class="form-signin">
+                                      <div class="form-label-group">
+                                        <input type="text" id="nomprénom" class="form-control" placeholder="Nom et prénom" required autofocus>
+                                        <label for="nomprénom"> Nom et Prénom </label>
+                                      </div>
+
+                                      <div class="form-label-group">
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                        <label for="inputEmail"> Adresse e-mail</label>
+                                      </div>
+                        
+                                      <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <label for="inputPassword"> saisir un mot de passe </label>
+                                      </div>
+                                     
+                                      <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">se rappeler du mot de passe</label>
+                                      </div>
+                                      <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit"> s'inscrire </button>
+                                      <hr class="my-2"> 
+                                      
+                                       <p class=text-center> s'inscrire avec </p>
+                                       <div class="d-flex justify-content-center">
+                                      <button class="btn  btn-google" type="submit"><i class="fa fa-google"></i> </button>
+                                      <button class="btn  btn-facebook" type="submit"><i class="fa fa-facebook-f"></i> </button>
+                                    </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+<!----------------------------------------------fin inscription------------------------------------------->
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+    
+  
+<!------------------------------------------------boutton panier------------------------------------------>
+
+    <a href="" data-toggle="modal" data-target="#panier" class="iconav"><i class="fa fa-shopping-bag fa-2x mx-3"></i></a>
+  </div>
+  
+  <div class="modal fade" id="panier" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Mon panier
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Produit</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Quantité</th>
+                <th scope="col">Total</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="w-25">
+                  <img src="image fruit/pomme.jpg" class="img-fluid img-thumbnail" alt="fraise">
+                </td>
+                <td>fraise</td>
+                <td>6 dt</td>
+                <td class="qty"><input type="number" class="form-control" id="input1" value="2"> </td>
+                <td>12 dt</td>
+                <td>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table> 
+          <div class="d-flex justify-content-end">
+            <h5>Total: <span class="price text-success">12 dt</span></h5>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0">
+            <a href="produit.html"> <button type="button" class="btn btn-danger" >Poursuivre mes achats</button> </a>
+              <button type="button" class="btn btn-success">Finaliser ma commande </button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </nav> 
+<!-------------------------------------------fin Navbar----------------------------------------------->
+
+        <!---------------------------------------------début nos produits ------------------------------------->
+<div class="container-fluid my-5">
+    <h3  class="subtitle text-center my-5 h3-responsive"> Tout les produits </h3>
+        <!---------------------------------------------trier par ------------------------------------->
+
+    <div class="col-12 col-sm-4 my-5 ml-auto">
+        <select class="custom-select">
+            <option selected> trier par</option>
+            <option value="1">le plus récent au ancien</option>
+            <option value="2">le plus au ancienau plus récent</option>
+            <option value="3"> Alphabet de A à Z </option>
+            <option value="4"> Alphabet de Z à A </option>
+            <option value="5"> prix </option>
+          </select>
+      </div>
+    
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 mx-auto d-none d-sm-block" class="catégorie">
+             
+             <ul>
+                 <li> <a class="dropdown-item" href="produit.html">Nos produits</a> </li>
+                 <li> <a class="dropdown-item" href="nos légumes.html">Nos légumes</a></li>
+                <li> <a class="dropdown-item" href="nos fruits.html">Nos fruits</a></li>
+               <li> <a class="dropdown-item" href="autresproduits.html"> Autres produits </a></li>
+    
+             </ul>
+            </div>  
+
+           <div class="col-10">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="image fruit/pomme.jpg" >
+                                    <img class="pic-2" src="image fruit/pomme.jpg" >
+
+                                </a>
+                                <ul class="social">
+                                    <li><a href=""  data-toggle="modal" data-target="#description" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                   
+
+                                    <li><a href=""  data-toggle="modal"  data-target="#panier" data-tip="Add to Wishlist"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">pommes rouges</a></h3>
+                                <div class="price">
+                                    6 DTN
+                                    <span>4.900 DTN</span>
+                                </div>
+                                <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#panier"> <span><i class="fas fa-cart-plus"></i> ajouter </span> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="image fruit/citron.jpg">
+                                    <img class="pic-2" src="image fruit/citron.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-toggle="modal"  data-target="#description" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="modal"  data-target="#panier" data-tip="Add to Wishlist"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">citron </a></h3>
+                                <div class="price"> 5.00 DTN
+                                 
+                                   
+                                </div>
+                                <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#panier"> <span><i class="fas fa-cart-plus"></i> ajouter </span> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="image fruit/fraise.jpg">
+                                    <img class="pic-2" src="image fruit/fraise.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-toggle="modal"  data-target="#description" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="modal"  data-target="#panier" data-tip="Add to Wishlist"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">fraise</a></h3>
+                                <div class="price"> 7 DTN <span>6 DTN</span>
+                                 
+                               
+                                </div>
+                                <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#panier"> <span><i class="fas fa-cart-plus"></i> ajouter </span> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="image fruit/abricot.jpg">
+                                    <img class="pic-2" src="image fruit/abricot.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-toggle="modal"  data-target="#description" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="modal"  data-target="#panier" data-tip="Add to Wishlist"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">abricot</a></h3>
+                                <div class="price">
+                                   3.00DTN
+                                    
+                                </div>
+                                <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#panier"> <span><i class="fas fa-cart-plus"></i> ajouter </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+          <!-----------------------------fin ligne 1 de produit------------------------->
+                  <div class="container-fluid my-5">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product-grid4">
+                                <div class="product-image4">
+                                    <a href="#">
+                                        <img class="pic-1" src="image fruit/pomme.jpg" >
+                                        <img class="pic-2" src="image fruit/pomme.jpg" >
+    
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" data-toggle="modal"  data-target="#description" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href=" " data-toggle="modal"  data-target="#panier" data-tip="Add to Wishlist"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <span class="product-discount-label">-10%</span>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">pommes rouges</a></h3>
+                                    <div class="price">
+                                        6 DTN
+                                        <span>4.900 DTN</span>
+                                    </div>
+                                    <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#panier"> <span><i class="fas fa-cart-plus"></i> ajouter </span> </a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product-grid4">
+                                <div class="product-image4">
+                                    <a href="#">
+                                        <img class="pic-1" src="image fruit/citron.jpg">
+                                        <img class="pic-2" src="image fruit/citron.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" data-toggle="modal"  data-target="#description" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="" data-toggle="modal"  data-target="#panier" data-tip="Add to Wishlist"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">citron </a></h3>
+                                    <div class="price">
+                                        5.000 DTN
+                                    </div>
+                                    <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#panier"> <span><i class="fas fa-cart-plus"></i> ajouter </span> </a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product-grid4">
+                                <div class="product-image4">
+                                    <a href="#">
+                                        <img class="pic-1" src="image fruit/fraise.jpg">
+                                        <img class="pic-2" src="image fruit/fraise.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" data-toggle="modal"  data-target="#description" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="" data-toggle="modal"  data-target="#panier" data-tip="Add to Wishlist"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <span class="product-discount-label">-10%</span>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">fraise</a></h3>
+                                    <div class="price">7 DTN<span>6DTN</span>
+                                      
+                                    </div>
+                                    <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#panier"> <span><i class="fas fa-cart-plus"></i> ajouter </span> </a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product-grid4">
+                                <div class="product-image4">
+                                    <a href="#">
+                                        <img class="pic-1" src="image fruit/abricot.jpg">
+                                        <img class="pic-2" src="image fruit/abricot.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" data-toggle="modal"  data-target="#description" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="" data-toggle="modal"  data-target="#panier" data-tip="Add to Wishlist"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                   
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">abricot</a></h3>
+                                    <div class="price">
+                                       3.00DTN
+                                        
+                                    </div>
+                                    <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#panier"> <span><i class="fas fa-cart-plus"></i> ajouter </span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            
+             <!-------------------------fin nos fruits------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+    <!-----------------------------------------------fin nos produits------------------------------------>
+      
+  </div>
+       </div>
+
+    </div>
+</div>
+
+
+<!-------------------------------modal description produit------------------------------>
+<div class="modal fade" id="description" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">
+           Article
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class=row>
+     
+         
+              <div class="col-7 mx-auto">
+                  <img src="image fruit/pomme.jpg" width="300" > 
+
+                  <p class="mt-5">   Pommes rouge cultivé à sbiba labellisé 100% biologique </p>
+
+              
+              </div>
+
+                 
+                 <div class="col-5 mx-auto">
+                  <h4>Pomme Bio </h4>   
+                 <h6> Prix: <span class="text-success"> 6 dt  </span> par 
+                 <input type="number" class="form-control" value="1" id="qty"> kg  </h6>
+                </div>
+    
+                 
+              </div>
+        </div>
+        <div class="modal-footer border-top-0">
+            <a href="produit.html"> <button type="button" class="btn btn-danger" >Poursuivre mes achats</button> </a>
+              <button type="button" class="btn btn-success">Finaliser ma commande </button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-----------------------------------------------fin modal description produit----------------------------------->
+
+
+
+
+          <!--------------------------------------------début footer-------------------------------------->
+</div>  
+
+
+
+<!-------------------------------modal description produit------------------------------>
+<div class="modal fade" id="description" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">
+           Article
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class=row>
+     
+         
+              <div class="col-7 mx-auto">
+                  <img src="image fruit/pomme.jpg" width="300" > 
+
+                  <p class="mt-5">   Pommes rouge cultivé à sbiba labellisé 100% biologique </p>
+
+              
+              </div>
+
+                 
+                 <div class="col-5 mx-auto">
+                  <h4>Pomme Bio </h4>   
+                 <h6> Prix: <span class="text-success"> 6 dt  </span> par 
+                 <input type="number" class="form-control" value="1" id="qty"> kg  </h6>
+                </div>
+    
+                 
+
+
+
+              </div>
+        </div>
+        <div class="modal-footer border-top-0">
+            <a href="produit.html"> <button type="button" class="btn btn-danger" >Poursuivre mes achats</button> </a>
+              <button type="button" class="btn btn-success">Finaliser ma commande </button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-----------------------------------------------fin modal description produit----------------------------------->
+<div class="container-fluid footer">
+      <div class="row">
+        <a href="acceuil.html"  class="footer-logo" class="text-decoration-none"> <h1> Natu<span style="color: forestgreen;">Bio </span> </h1>  </a>
+      </div>
+
+      <div class="row justify-content-between">
+     <!-------------adresse----------->
+ 
+    <div class="col-xs-12 col-md-4 my-auto">
+        <ul> <li> <span> <i class="fas fa-map-marked-alt" id="adresse"></i>  </span>  Rue ebn khaldoun, Tunis </li>
+        <li>  <span> <i class="fas fa-phone-volume" id="adresse"></i> </span>   (+216) 71 022 222  </li>
+        <li> <span>  <i class="fas fa-envelope" id="adresse"></i> </span> Natubio@gmail.com   </li>
+        </ul> 
+    </div>
+    <div class="col-xs-12 col-md-4 my-auto">
+
+      <ul>
+        <li> <h5> Liens rapides </h5> </li>
+        <li> <a href="produit.html">  Nos produits  </a> </li>
+        <li> <a href="apropos.html">  A propos </a> </li>
+        <li> <a href="#paniernav">  Mon panier  </a> </li>
+        <li> <a href="#connexion"> Mon compte </a>  </li>
+
+      </ul>
+    </div>
+
+
+  <!-------------newsletter ----------->
+     <div class="col-xs-4 col-md-4 my-auto">
+     <h5>  Restons en contact</h5>
+      <form action="#">
+          <div class="form-row">
+              <div class="col-9 dk-footer-form">
+                  <input type="email" class="form-control" placeholder="Adresse e-mail">
+                  <button type="submit" class="text-center" my-auto> s'abonner
+                
+                  </button>
+              </div>
+          </div>
+      </form>
+      <!----------------social media-------->
+      <div class="footer-social-link my-3">
+        <h5 > Suivez -nous </h5>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+       
+        </ul>
+        </div>
+         <!-------------end -social media-------->
+    </div>
+  <!--------------------end -newsletter----------->
+</div>
+
+<div class="text-center">
+<hr>
+© Copyright 2020. Tout droits réservés à NatuBio
+</div>
+</div>
+<!--------------------------------------------fin footer------------------------------------------->
+
+
+
+
+
+</body>
+</html>
