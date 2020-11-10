@@ -17,7 +17,7 @@
 </head>
 <body>
           <!--------------------------Navbar----------------------------------------------->
-          <nav class="navbar navbar-expand-lg   navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg   navbar-light nav">
             <a class="navbar-brand" href="acceuil.html"> <h2> Natu<span style="color: forestgreen;">Bio </span> </h2> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -158,7 +158,7 @@
                       </div>
                   </div>
     
-              </div>   
+              
           
     
             <!------------------------------------------------boutton panier------------------------------------------>
@@ -196,7 +196,7 @@
                         </td>
                         <td> fraise</td>
                         <td>8 dt</td>
-                        <td class="qty"><input type="number" class="form-control" id="input1" value="1"> </td>
+                        <td><input type="number" class="form-control" id="qty" value="1"> </td>
                         <td>8 dt</td>
                         <td>
                           <a href="#" class="btn btn-danger btn-sm">
@@ -211,7 +211,7 @@
                         </td>
                         <td>fraise</td>
                         <td>6 dt</td>
-                        <td class="qty"><input type="number" class="form-control" id="input1" value="2"> </td>
+                        <td><input type="number" class="form-control" id="qty" value="2"> </td>
                         <td>12 dt</td>
                         <td>
                           <a href="#" class="btn btn-danger btn-sm">
@@ -235,49 +235,51 @@
               </div>
             </div>
           </div>
-    
+        </div>  
         </div>
           </nav>  
        <!------------------------------------------fin navbar-------------------------------------->
 
        <!------------------------------------------début  a propos --------------------------------->
-       <div class="container mb-5">
-           <div class="row my-5">
-               <div class="col-12 col-sm-7 my-5 text-center">
-                <h2 class="subtitle my-5 text-center">  <span class="start"> Qui  sommes </span>-nous ?  </h2>
+       <div class="container mt-5">
+           <div class="row">
+               <div class="col-xs-6 col-md-6">
 
-                   <p>
-                    NatuBio est une grande société née de l'envie de proposer un service d'excellence 
+                   <div class="propos text-center">
+                      <h2 class="subtitle my-5 text-center ">  <span class="start"> Qui  sommes </span>-nous ?  </h2>
+
+                  <p> NatuBio est une grande société née de l'envie de proposer un service d'excellence 
                      pour des clients exigents d'une alimentation saine et 100% biologiques 
-                      intrants chimiques ni OMG
-                   </p>
+                      intrants chimiques ni OMG </p> 
+                  
 
                  <a href="produit.html" > <boutton> <div class="btn  btn-success mt-3">  Commander maintenant </div> </boutton>
                  </a>
                 </div>
+              </div>
         <!------------------------------------------carousel  a propos --------------------------------->
-
-             <div class="col-12 col-sm-5 my-5 mx-auto text-center"> 
+     
+             <div class="col-xs-6 col-md-6 my-5 mx-auto text-center cat"> 
 
                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="500">
-                      <img src="apropos/bio1.jpg" class="d-block w-100 rounded" height="300" alt="...">
+                      <img src="apropos/bio1.jpg" class="d-block w-100 rounded" height="300"  width="50" alt="...">
                     </div>
                     <div class="carousel-item" data-interval="500">
-                        <img src="image fruit/farm.jpg" class="d-block w-100 rounded" height="300" alt="...">
+                        <img src="image fruit/farm.jpg" class="d-block w-100 rounded" height="300" width="50" alt="...">
                     </div>
                     <div class="carousel-item" data-interval="500">
-                      <img src="apropos/farm.jpg" class="d-block w-100 rounded" height="300" alt="...">
+                      <img src="apropos/farm.jpg" class="d-block w-100 rounded" height="300" width="50" alt="...">
                   </div>
                 
                     <div class="carousel-item">
-                      <img src="image fruit/leg6.jpeg" class="d-block w-100 rounded" height="300"alt="..." data-interval="500">
+                      <img src="image fruit/leg6.jpeg" class="d-block w-100 rounded" height="300" width="50" alt="..." data-interval="500">
                     </div>
                   </div>
                 </div>
               </div> 
-               
+           
       <!------------------------------------------  fin carousel  a propos --------------------------------->
    
                </div>
@@ -286,10 +288,12 @@
 
      <!-------------------------------------------------  fin  a propos -------------------------------------->
      <!------------------------------------------------- début nos missions-------------------------------------->
-     <div class="row my-5">
-  
+    
+    <div class="container">
+     <div class="row my-5" >
+
        
-     <div class="container-fluid mt-5">
+     <div class="container-fluid mt-5 nosmissions">
       
   <div class="col-12">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
@@ -302,7 +306,7 @@
         <div class="carousel-item active">
           <img src="back/Fond_blanc.svg.png" class="d-block w-100" height="200" alt="...">
           <div class="carousel-caption d-md-block">
-             <div class="missions"> <h2 class="mb-3"> <span class="start"> Nos missions </span> </h2>
+             <div class="missions"> <h2 class="h2-responsive mt-2"> <span class="start"> Nos missions </span> </h2>
             <h4> Vous rendre le Bio accessible au juste prix! </h4>
            
           </div>
@@ -311,16 +315,15 @@
         <div class="carousel-item">
           <img src="back/Fond_blanc.svg.png" class="d-block w-100" height="200" alt="...">
           <div class="carousel-caption d-md-block">
-           <div class="missions">  <h2 class="mb-3" ><span class="start"> Nos missions </span></h2>
-            <h4>Vous offrir des produits certifiés 100 % biologiques </h4>
+           <div class="missions">  <h2 class="h2-responsive  mt-2" ><span class="start"> Nos missions </span></h2>
+            <h4> Vous offrir des produits certifiés 100 % biologiques </h4>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <img src="back/Fond_blanc.svg.png" Class="d-block w-100" height="200" alt="...">
           <div class="carousel-caption  d-md-block">
-            <div class="missions"> 
-            <h2 class="mb-3"> <span class="start"> Nos missions </span></h2>
+            <div class="missions"> <h2 class="h2-responsive  mt-2"> <span class="start"> Nos </span> missions </h2>
             <h4> Vos courses Bio entre vos main en 4h max !</h4>
             </div>
           </div>
@@ -339,29 +342,28 @@
 
   </div>
 </div>
- 
+</div>
  <!------------------------------------------------- fin nos missions-------------------------------------->
 
  <!----------------------------------------------début chiffres ------------------------------------->
  <div class="container-fluid my-5"> 
   <div class="chiffres2 text-center">
   <div class="row mt-5 mx-auto">
-<div class="col-4 text-center mb-2 mx-auto">
- <h2 class="h2-responsive mb-5"> 50 <br> 
-  magasins
- </h2> 
+<div class="col-xs-12 col-md-4 text-center mb-2 mx-auto">
+ <h1 class="h1-responsive mb-2 mx-auto"> 50 </h1>
+  <h2 class="h2-responsive"> magasins </h2>
+
 </div>
 
-<div class="col-4 text-center mb-2 mx-auto">
-      <h2 class="h2-responsive mb-5"> + 500 <br> 
-       Références produits
-      </h2> 
+<div class="col-xs-12 col-md-4 text-center mb-2 mx-auto">
+      <h1 class="h1-responsive mb-2 mx-auto"> + 500  </h1>
+      <h2> Références produits </h2>
+     
      </div>
 
-<div class="col-4 text-center mb-5 mx-auto">
-        <h2 class="h2-responsive"> 1400 <br> 
-         Clients satisfaits
-        </h2> 
+<div class="col-xs-12 col-md-4 text-center mb-2 mx-auto">
+        <h1 class="h1-responsive mb-2 mx-auto"> 1400  </h1> 
+       <h2 class="h2-responsive">  Clients satisfaits </h2>
        </div>
 </div>
 </div>
@@ -369,18 +371,18 @@
 <!---------------------------------------------------fin chiffres ------------------------------------->
 
  <!--------------------------------------------début nos partenaires ------------------------------------->
-<div class="container my-5">
+<div class="container mb-5">
   <h3 class="subtitle text-center my-5"> <span class="start"> Nos  </span>partenaires  </h3>
 
-  <div class="row ml-5 ">
-  <div class="col-12 col-sm-4 col-md-4 my-2">
-  <img src="partenaire/FOODQUALITY.jpg"  class="partenaires"  height="200" width="400">
+  <div class="row ml-5 d-flex justify-content-center">
+  <div class="col-xs-12 col-sm-12 col-md-4 my-2">
+  <img src="partenaire/FOODQUALITY.jpg"  class="partenaires"  height="200" width="200">
   </div>
-  <div class="col-12 col-sm-4 col-md-4 my-2">
+  <div class="col-xs-12 col-sm-12 col-md-4 my-2">
     <img src="partenaire/MABROUKA.jpg" class="partenaires"  height="200">
     </div>
 
-    <div class="col-12 col-sm-4 col-md-4  my-2">
+    <div class="col-xs-12 col-sm-12 col-md-4 my-2">
       <img src="partenaire/inrat.jpg" class="partenaires"  height="200">
     </div>
 </div>
@@ -473,14 +475,6 @@
 </div>
 </div>
 <!--------------------------------------------fin footer------------------------------------------->
-
-
-
-
-
-
-
-
 
 
 
