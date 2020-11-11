@@ -24,20 +24,29 @@ overflow-y: scroll;
 
 
 }
-.nav{ 
-box-shadow:0 0 10px rgba(0,0,0,.2)
+.navbar{ box-shadow:0 0 10px rgba(0,0,0,.2);
 
+  box-shadow: rgb(163, 173, 175) 0px 0px 9px 0px;
+  margin-bottom:2px;
+  background-color: rgb(176, 224, 196);
 }
+
+
 .navbar-nav .nav-item .nav-link {
 color:black;
 font-size:18px;
 padding:5px 20px;
 box-shadow: 2px black;
+
 }
 .nav-item .nav-link:hover {
   color: green;
   border-bottom: 3px solid  green;
   transform: scale(1.02);
+}
+
+.dropdown-menu{ 
+  background-color: rgb(176, 224, 196);
 }
 
 .start{color:green;}
@@ -62,9 +71,9 @@ box-shadow: 2px black;
 }
 
 #iconav{
-    color:rgb(35, 155, 35);
+  
     text-decoration: none;
-    font-size: 25px;
+    font-size: 28px;
 
 }
 
@@ -216,9 +225,8 @@ a i.fa-google .fa-facebook-f .fa-twitter{
     .missions{
       color:black;
       position:relative;
-      padding-top:20vh;
-      margin-left:10vh;
-      padding-bottom:5vh;
+    
+    
       font-family:'Merriweather', serif;
 
 
@@ -236,7 +244,7 @@ a i.fa-google .fa-facebook-f .fa-twitter{
 
 
 .page-padding {
-  padding: 50px 0px 100px;}
+  padding: 40px 0px 100px;}
 
   .contact-form input[type="text"],.contact-form input[type="email"] {
     height: 44px;
@@ -305,8 +313,28 @@ a i.fa-google .fa-facebook-f .fa-twitter{
           }
         
 
+        .btn-achat{
+          background: #14814e;
+          color: #fff;
+          display: block;
+          font-size: 16px;
+          position:relative;
+          transition: 0.4s;
+          border-radius: 2px;
+          width: 100% !important;
+          margin-top:5px;
+          border: 1px solid#14814e;
+          text-transform: capitalize;
+          font-weight: 400;
 
-
+        }
+        .btn-achat:hover{ 
+          transform: scale(1.002);
+          background: #fff;
+          color: #08cfa4;;
+          border:1px solid #08cfa4;
+          font-weight: 600;
+        }
 
 
 
@@ -321,32 +349,25 @@ a i.fa-google .fa-facebook-f .fa-twitter{
   width: 6rem;
   
   }
-.nav{
-  box-shadow: rgb(163, 173, 175) 0px 0px 9px 0px;
-  margin-bottom:2px;
-  background-color: rgb(217, 236, 225);
-}
 
 
 .nosmissions{
 background-color:white;
 padding:2px 2px;
 
-box-shadow: rgb(163, 173, 175) 8px 8px 8px 8px;
+box-shadow: rgb(163, 173, 175) 2px 2px 5px 5px;
 
 }
 .propos{
-  z-index:1;
-  
- 
-  background:transparent;
+  background-color: rgba(11, 54, 29, 0.1);
 
 }
   
     thead, td, th {
-      border: 0;
+     
       color: black;
-      font-size: 14px;
+      font-size: 15px;
+      width:auto;
     }
 
   
@@ -355,7 +376,6 @@ box-shadow: rgb(163, 173, 175) 8px 8px 8px 8px;
     vertical-align: middle;
     text-align: center;
 }
-    
     
 
 
@@ -371,8 +391,8 @@ box-shadow: rgb(163, 173, 175) 8px 8px 8px 8px;
 
 
 .product-grid4,.product-grid4 .product-image4{position:relative; width:auto; }
-.product-grid4{font-family:Poppins,sans-serif;text-align:center;height: 25rem; border-radius:5px;overflow:hidden;z-index:1;transition:all .3s ease 0s}
-.product-grid4:hover{box-shadow:0 0 10px rgba(0,0,0,.2)}
+.product-grid4{font-family:Poppins,sans-serif;text-align:center;height: 20rem; border-radius:5px;overflow:hidden;z-index:1;transition:all .3s ease 0s}
+.product-grid4:hover{box-shadow:0 0 5px rgba(0,0,0,.2)}
 .product-grid4 .product-image4 a{display:block}
 .product-grid4 .product-image4 img{width:100%;height:200px}
 .product-grid4 .pic-1{opacity:1;transition:all .5s ease-out 0s}
@@ -399,9 +419,8 @@ box-shadow: rgb(163, 173, 175) 8px 8px 8px 8px;
 .product-grid4 .price span{color:#909090;font-size:13px;font-weight:400;letter-spacing:0;text-decoration:line-through;word-wrap: none;vertical-align:middle;display:inline}
 .product-grid4 .add-to-cart{border:1px solid #e5e5e5;display:inline-block;padding:10px 20px;color:#888;font-weight:600;font-size:14px;border-radius:4px;transition:all .3s}
 .product-grid4:hover .add-to-cart{border:1px solid transparent;background:#16a085;color:#fff}
-.product-grid4 .add-to-cart:hover{background-color:#505050;box-shadow:0 0 10px rgba(0,0,0,.5)}
-@media only screen and (max-width:990px){.product-grid4{margin-bottom:30px}
-}
+.product-grid4 .add-to-cart:hover{background-color:#505050;box-shadow:0 0 5px rgba(0,0,0,.5)}
+
 
 
 
@@ -589,7 +608,7 @@ box-shadow: rgb(163, 173, 175) 8px 8px 8px 8px;
   background-color: black;
 }
 .contactez{
-background-color: #4CAF50;
+background-color: #14814e;
 
 }
 
@@ -599,6 +618,9 @@ background-color: #4CAF50;
 
 
 /*------------fin style boutton phone-----*/
+
+
+/*------------style back to top---------*/
 .back-to-top {
   z-index: 2; }
   .back-to-top .btn-dark {

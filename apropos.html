@@ -17,7 +17,7 @@
 </head>
 <body>
           <!--------------------------Navbar----------------------------------------------->
-          <nav class="navbar navbar-expand-lg   navbar-light nav">
+          <nav class="navbar navbar-expand-lg   navbar-light nav" id="back-to-top">
             <a class="navbar-brand" href="acceuil.html"> <h2> Natu<span style="color: forestgreen;">Bio </span> </h2> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
                   </li> 
               </ul>
           <!------------------------------------------bouton inscription modal-------------------------------------------->
-              <a href="" data-toggle="modal" data-target="#connexion" > <i class="fa fa-user" id="iconav" ></i></a>
+              <a href="" data-toggle="modal" data-target="#connexion" > <i class="far fa-user mr-2" id="iconav" ></i></a>
     
               <div class="modal fade" id="connexion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
@@ -163,7 +163,7 @@
     
             <!------------------------------------------------boutton panier------------------------------------------>
     
-            <a href="" data-toggle="modal" data-target="#paniernav" ><i class="fa fa-shopping-bag mx-3" id="iconav"></i></a>
+            <a href="" data-toggle="modal" data-target="#paniernav" ><img src="image fruit/shoppingbag1.ico" class="text-info" id="iconav"></a>
           </div>
           
           <div class="modal fade" id="paniernav" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -241,11 +241,11 @@
        <!------------------------------------------fin navbar-------------------------------------->
 
        <!------------------------------------------début  a propos --------------------------------->
-       <div class="container mt-5">
-           <div class="row">
+       <div class="container-fluid  py-5">
+           <div class="row propos ">
                <div class="col-xs-6 col-md-6">
 
-                   <div class="propos text-center">
+                   <div class="text-center mx-5">
                       <h2 class="subtitle my-5 text-center ">  <span class="start"> Qui  sommes </span>-nous ?  </h2>
 
                   <p> NatuBio est une grande société née de l'envie de proposer un service d'excellence 
@@ -303,27 +303,27 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active my-auto">
           <img src="back/Fond_blanc.svg.png" class="d-block w-100" height="200" alt="...">
           <div class="carousel-caption d-md-block">
-             <div class="missions"> <h2 class="h2-responsive mt-2"> <span class="start"> Nos missions </span> </h2>
+             <div class="missions text-center"> <h2 class="h2-responsive my-auto mx-auto"> <span class="start"> Nos missions </span> </h2>
             <h4> Vous rendre le Bio accessible au juste prix! </h4>
            
           </div>
         </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item my-auto">
           <img src="back/Fond_blanc.svg.png" class="d-block w-100" height="200" alt="...">
           <div class="carousel-caption d-md-block">
-           <div class="missions">  <h2 class="h2-responsive  mt-2" ><span class="start"> Nos missions </span></h2>
+           <div class="missions text-center">  <h2 class="h2-responsive my-auto mx-auto" ><span class="start"> Nos missions </span></h2>
             <h4> Vous offrir des produits certifiés 100 % biologiques </h4>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item my-auto">
           <img src="back/Fond_blanc.svg.png" Class="d-block w-100" height="200" alt="...">
           <div class="carousel-caption  d-md-block">
-            <div class="missions"> <h2 class="h2-responsive  mt-2"> <span class="start"> Nos </span> missions </h2>
+            <div class="missions text-center"> <h2 class="h2-responsive mt-auto mx-auto"> <span class="start"> Nos </span> missions </h2>
             <h4> Vos courses Bio entre vos main en 4h max !</h4>
             </div>
           </div>
@@ -416,8 +416,8 @@
       <li> <h6> Liens rapides </h6> </li>
       <li> <a href="produit.html">  Nos produits  </a> </li>
       <li> <a href="apropos.html">  A propos </a> </li>
-      <li> <a href="#paniernav">  Mon panier  </a> </li>
-      <li> <a href="#connexion"> Mon compte </a>  </li>
+      <li> <a href="panier.html">  Mon panier  </a> </li>
+      <li> <a href="moncompte.html"> Mon compte </a>  </li>
 
     </ul>
   </div>
@@ -426,7 +426,7 @@
 <!-------------newsletter ----------->
    <div class="col-12 col-sm-4 col-md-4 my-auto">
    <h6> Restons en contact</h6>
-    <form action="#">
+    <form action=" ">
         <div class="form-row">
             <div class="col-9 dk-footer-form">
                 <input type="email" class="form-control" placeholder="Adresse e-mail"  required>
@@ -475,6 +475,12 @@
 </div>
 </div>
 <!--------------------------------------------fin footer------------------------------------------->
+
+<a href="#back-to-top" class="back-to-top">
+  <button class="btn btn-dark" title="Back to Top" style="display: block;">
+      <i class="fa fa-angle-up"></i>
+  </button>
+</a>
 
 
 

@@ -20,7 +20,7 @@
   
    
            <!-------------------------début -Navbar----------------------------------------------->
-           <nav class="navbar navbar-expand-lg   navbar-light bg-light nav" id="back-to-top">
+           <nav class="navbar navbar-expand-lg   navbar-light nav" id="back-to-top">
             <a class="navbar-brand" href="acceuil.html"> <h2> Natu<span style="color: forestgreen;">Bio </span> </h2> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
               </ul>
           <!------------------------------------------bouton modal inscription -------------------------------------------->
     
-              <a href="" data-toggle="modal" data-target="#connexion" > <i class="fa fa-user" id="iconav" ></i></a>
+              <a href="" data-toggle="modal" data-target="#connexion" > <i class="far fa-user mr-2" id="iconav" ></i></a>
     
               <div class="modal fade" id="connexion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
@@ -167,7 +167,7 @@
           
        <!------------------------------------------------boutton panier------------------------------------------>
     
-            <a href="" data-toggle="modal" data-target="#paniernav" ><i class="fa fa-shopping-bag mx-3" id="iconav"></i></a>
+            <a href="" data-toggle="modal" data-target="#paniernav" ><img src="image fruit/shoppingbag1.ico" class="w-100 text-info" id="iconav"></a>
           </div>
           
           <div class="modal fade" id="paniernav" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -239,7 +239,7 @@
               </div>
             </div>
           </div>
-    
+         
         </div>
           </nav> 
       <!-------------------------------------------fin Navbar----------------------------------------------->
@@ -314,12 +314,14 @@
             <div class="form-label-group">
                  <textarea  class="form-control" placeholder="Ecrire un  message"></textarea>
             </div>
-          
-          <div class="col-xs-2 col-md-2 mb-2 ml-auto">
-                <button type="submit" class="btn-contact"> <i class="fa fa-paper-plane" aria-hidden="true"> Envoyer</i>    </button>
-          </div>
+    
+        
+                <button type="submit" class="btn-contact  mb-5 ml-auto"> <i class="fa fa-paper-plane" aria-hidden="true"> Envoyer</i>    </button>
+           
+         
+             
         </form>
-
+     
 <!--------------------------------------------------map--------------------------------------------------------->
 
  <div class="col-12 col sm-6 col-md-6">
@@ -362,8 +364,8 @@
       <li> <h6> Liens rapides </h6> </li>
       <li> <a href="produit.html">  Nos produits  </a> </li>
       <li> <a href="apropos.html">  A propos </a> </li>
-      <li> <a href="#paniernav">  Mon panier  </a> </li>
-      <li> <a href="#connexion"> Mon compte </a>  </li>
+      <li> <a href="panier.html">  Mon panier  </a> </li>
+      <li> <a href="moncompte.html"> Mon compte </a>  </li>
 
     </ul>
   </div>
@@ -422,6 +424,11 @@
 </div>
 <!--------------------------------------------fin footer------------------------------------------->
 
+<a href="#back-to-top" class="back-to-top">
+  <button class="btn btn-dark" title="Back to Top" style="display: block;">
+      <i class="fa fa-angle-up"></i>
+  </button>
+</a>
 
 
 </body>
